@@ -13,4 +13,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/kudima03/Pure.Primitives.Switches</PackageProjectUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pure.HashCodes" Version="1.0.0" />
+    <PackageReference Include="Pure.Primitives.Abstractions" Version="4.0.9" />
+  </ItemGroup>
 </Project>

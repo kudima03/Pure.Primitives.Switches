@@ -1,3 +1,4 @@
+using System.Globalization;
 using Pure.HashCodes;
 using Pure.Primitives.Abstractions.Guid;
 using Pure.Primitives.Abstractions.String;
@@ -39,7 +40,7 @@ public sealed record GuidSwitchTests
 
         Assert.Equal(
             "683724FD-24F9-4637-8B7E-9FDD1F986186",
-            guidSwitch.GuidValue.ToString().ToUpper()
+            guidSwitch.GuidValue.ToString().ToUpper(CultureInfo.InvariantCulture)
         );
     }
 
@@ -72,7 +73,7 @@ public sealed record GuidSwitchTests
 
         Assert.Equal(
             "5D7D833C-6697-4060-B797-8FA5108840E1",
-            guidSwitch.GuidValue.ToString().ToUpper()
+            guidSwitch.GuidValue.ToString().ToUpper(CultureInfo.InvariantCulture)
         );
     }
 

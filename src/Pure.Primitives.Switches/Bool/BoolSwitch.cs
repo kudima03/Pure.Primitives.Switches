@@ -9,6 +9,8 @@ public sealed record BoolSwitch<TSelector> : IBool
 
     private readonly Func<TSelector, IDeterminedHash> _hashFactory;
 
+    private readonly IBool? _defaultValue;
+
     private readonly IEnumerable<KeyValuePair<TSelector, IBool>> _branches;
 
     public BoolSwitch(
@@ -16,9 +18,18 @@ public sealed record BoolSwitch<TSelector> : IBool
         IEnumerable<KeyValuePair<TSelector, IBool>> branches,
         Func<TSelector, IDeterminedHash> hashFactory
     )
+        : this(parameter, branches, hashFactory, null!) { }
+
+    public BoolSwitch(
+        TSelector parameter,
+        IEnumerable<KeyValuePair<TSelector, IBool>> branches,
+        Func<TSelector, IDeterminedHash> hashFactory,
+        IBool defaultValue
+    )
     {
         _parameter = parameter;
         _hashFactory = hashFactory;
+        _defaultValue = defaultValue;
         _branches = branches;
     }
 
@@ -27,9 +38,14 @@ public sealed record BoolSwitch<TSelector> : IBool
         get
         {
             IEnumerable<byte> parameterHash = _hashFactory(_parameter);
-            return _branches
-                .First(x => parameterHash.SequenceEqual(_hashFactory(x.Key)))
-                .Value.BoolValue;
+
+            IEnumerable<IBool> filteredBranches = _branches
+                .Where(x => parameterHash.SequenceEqual(_hashFactory(x.Key)))
+                .Select(x => x.Value);
+
+            return _defaultValue == null
+                ? filteredBranches.First().BoolValue
+                : filteredBranches.FirstOrDefault(_defaultValue).BoolValue;
         }
     }
 

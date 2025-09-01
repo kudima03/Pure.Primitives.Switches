@@ -27,7 +27,7 @@ public sealed record BoolSwitchTests
     }
 
     [Fact]
-    public void GiveDefultValueOnNotExistingSelector()
+    public void GiveDefaultValueOnNotExistingSelector()
     {
         IBool boolSwitch = new BoolSwitch<IString>(
             new String("asdasd"),

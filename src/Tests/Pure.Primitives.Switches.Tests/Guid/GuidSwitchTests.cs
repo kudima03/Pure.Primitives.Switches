@@ -8,7 +8,7 @@ using Pure.Primitives.Switches.Guid;
 namespace Pure.Primitives.Switches.Tests.Guid;
 
 using Guid = Primitives.Guid.Guid;
-using String = String.String;
+using String = Pure.Primitives.String.String;
 
 public sealed record GuidSwitchTests
 {

@@ -7,7 +7,7 @@ using Pure.Primitives.Switches.Time;
 
 namespace Pure.Primitives.Switches.Tests.Time;
 
-using String = String.String;
+using String = Pure.Primitives.String.String;
 using Time = Primitives.Time.Time;
 
 public sealed record TimeSwitchTests

@@ -7,7 +7,7 @@ using Pure.Primitives.Switches.DayOfWeek;
 
 namespace Pure.Primitives.Switches.Tests.DayOfWeek;
 
-using String = String.String;
+using String = Pure.Primitives.String.String;
 
 public sealed record DayOfWeekSwitchTests
 {

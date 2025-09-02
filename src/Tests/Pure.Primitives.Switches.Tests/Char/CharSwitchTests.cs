@@ -7,7 +7,7 @@ using Pure.Primitives.Switches.Char;
 namespace Pure.Primitives.Switches.Tests.Char;
 
 using Char = Primitives.Char.Char;
-using String = String.String;
+using String = Pure.Primitives.String.String;
 
 public sealed record CharSwitchTests
 {

@@ -9,7 +9,7 @@ namespace Pure.Primitives.Switches.Tests.DateTime;
 
 using Date = Primitives.Date.Date;
 using DateTime = Primitives.DateTime.DateTime;
-using String = String.String;
+using String = Primitives.String.String;
 using Time = Primitives.Time.Time;
 
 public sealed record DateTimeSwitchTests

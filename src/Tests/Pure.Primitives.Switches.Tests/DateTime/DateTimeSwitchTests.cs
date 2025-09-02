@@ -24,28 +24,28 @@ public sealed record DateTimeSwitchTests
                     new String("branch1"),
                     new DateTime(
                         new Date(new UShort(1), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch2"),
                     new DateTime(
                         new Date(new UShort(2), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch3"),
                     new DateTime(
                         new Date(new UShort(3), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch4"),
                     new DateTime(
                         new Date(new UShort(4), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
             ],
@@ -56,7 +56,7 @@ public sealed record DateTimeSwitchTests
             new DeterminedHash(
                 new DateTime(
                     new Date(new UShort(4), new UShort(1), new UShort(2000)),
-                    new Time(new UShort(24), new UShort(12))
+                    new Time(new UShort(23), new UShort(12))
                 )
             ).AsEnumerable(),
             new DeterminedHash(dateTimeSwitch).AsEnumerable()
@@ -73,35 +73,35 @@ public sealed record DateTimeSwitchTests
                     new String("branch1"),
                     new DateTime(
                         new Date(new UShort(1), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch2"),
                     new DateTime(
                         new Date(new UShort(2), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch3"),
                     new DateTime(
                         new Date(new UShort(3), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch4"),
                     new DateTime(
                         new Date(new UShort(4), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
             ],
             x => new DeterminedHash(x),
             new DateTime(
                 new Date(new UShort(5), new UShort(1), new UShort(2000)),
-                new Time(new UShort(24), new UShort(12))
+                new Time(new UShort(23), new UShort(12))
             )
         );
 
@@ -109,7 +109,7 @@ public sealed record DateTimeSwitchTests
             new DeterminedHash(
                 new DateTime(
                     new Date(new UShort(5), new UShort(1), new UShort(2000)),
-                    new Time(new UShort(24), new UShort(12))
+                    new Time(new UShort(23), new UShort(12))
                 )
             ).AsEnumerable(),
             new DeterminedHash(dateTimeSwitch).AsEnumerable()
@@ -126,28 +126,28 @@ public sealed record DateTimeSwitchTests
                     new String("branch1"),
                     new DateTime(
                         new Date(new UShort(1), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch2"),
                     new DateTime(
                         new Date(new UShort(2), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch3"),
                     new DateTime(
                         new Date(new UShort(3), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
                 new KeyValuePair<IString, IDateTime>(
                     new String("branch4"),
                     new DateTime(
                         new Date(new UShort(4), new UShort(1), new UShort(2000)),
-                        new Time(new UShort(24), new UShort(12))
+                        new Time(new UShort(23), new UShort(12))
                     )
                 ),
             ],

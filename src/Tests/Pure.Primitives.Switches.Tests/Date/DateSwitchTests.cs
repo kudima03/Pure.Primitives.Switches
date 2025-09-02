@@ -8,7 +8,7 @@ using Pure.Primitives.Switches.Date;
 namespace Pure.Primitives.Switches.Tests.Date;
 
 using Date = Primitives.Date.Date;
-using String = Pure.Primitives.String.String;
+using String = Primitives.String.String;
 
 public sealed record DateSwitchTests
 {

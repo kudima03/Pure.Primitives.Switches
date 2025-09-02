@@ -7,7 +7,7 @@ using Pure.Primitives.Switches.Number;
 
 namespace Pure.Primitives.Switches.Tests.Number;
 
-using String = Pure.Primitives.String.String;
+using String = Primitives.String.String;
 
 public sealed record NumberSwitchTests
 {

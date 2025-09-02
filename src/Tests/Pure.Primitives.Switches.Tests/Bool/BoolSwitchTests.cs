@@ -7,7 +7,7 @@ using Pure.Primitives.Switches.Bool;
 
 namespace Pure.Primitives.Switches.Tests.Bool;
 
-using String = Pure.Primitives.String.String;
+using String = Primitives.String.String;
 
 public sealed record BoolSwitchTests
 {

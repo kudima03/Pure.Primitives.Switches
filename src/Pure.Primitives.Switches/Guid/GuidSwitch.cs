@@ -1,4 +1,4 @@
-using Pure.HashCodes;
+using Pure.HashCodes.Abstractions;
 using Pure.Primitives.Abstractions.Guid;
 
 namespace Pure.Primitives.Switches.Guid;

@@ -1,25 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFrameworks>net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <IsTrimmable>true</IsTrimmable>
-    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
-    <EnableAotAnalyzer>true</EnableAotAnalyzer>
+    <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
   <PropertyGroup>
     <PackageId>Pure.Primitives.Switches</PackageId>
     <RootNamespace>Pure.Primitives.Switches</RootNamespace>
     <AssemblyName>Pure.Primitives.Switches</AssemblyName>
-    <Version>0.1.0</Version>
     <Authors>Dmitry Kurochkin</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/kudima03/Pure.Primitives.Switches</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.11" />
     <PackageReference Include="Pure.HashCodes.Abstractions" Version="0.2.0" />
-    <PackageReference Include="Pure.Primitives" Version="3.6.2" PrivateAssets="All" />
-    <PackageReference Include="Pure.Primitives.Abstractions" Version="4.3.0" />
+    <PackageReference Include="Pure.Primitives" Version="3.6.2" />
   </ItemGroup>
 </Project>

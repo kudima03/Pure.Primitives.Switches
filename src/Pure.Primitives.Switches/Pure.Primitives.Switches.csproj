@@ -10,7 +10,6 @@
     <PackageId>Pure.Primitives.Switches</PackageId>
     <RootNamespace>Pure.Primitives.Switches</RootNamespace>
     <AssemblyName>Pure.Primitives.Switches</AssemblyName>
-    <Version>0.1.0</Version>
     <Authors>Dmitry Kurochkin</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/kudima03/Pure.Primitives.Switches</PackageProjectUrl>

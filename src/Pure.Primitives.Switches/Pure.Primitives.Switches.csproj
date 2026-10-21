@@ -19,7 +19,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Pure.HashCodes.Abstractions" Version="0.2.0" />
-    <PackageReference Include="Pure.Primitives" Version="3.6.5" />
+    <PackageReference Include="Pure.Primitives" Version="3.7.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="/" />
